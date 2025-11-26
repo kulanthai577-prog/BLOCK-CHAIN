@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(23, 2, 44);
+}
+
+
+
+span i{
+    color: white;
+    font-size: 30px;
+    
+}
+
+#links{
+    margin-left: 250px;
+    padding: 10px;
+}
+
+#links ul li a{
+    padding-left: 30px;
+    color: white;
+}
+
+#bt{
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-left: 30px;
+}
+
+#bt img{
+
+    height: 20px;
+    width: 20px;
+}
+
+/* main page */
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -100px;
+    padding: 30px;
+}
+
+.main .text{
+    margin-top: -80px;
+    color: white;
+}
+.main .text h1{
+    color: blueviolet;
+}
+
+ .img img{
+    height: 600px;
+    width: 700px;
+}
+
+.eli  {
+    color: white;
+    font-size: 60px;
+    margin-top: -150px;
+    text-align: center;
+}
+
+.lottery{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -20px;
+    padding-top: 30px;
+    /* flex-wrap: wrap; */
+}
+.card-1{
+    width: 30%;
+    border: 2px solid rgb(202, 182, 182);
+    border-radius: 15px;
+    text-align: center;
+    gap: 30px;
+}
+.card-1 .he{
+
+    height: 50px;
+    width: 60px;
+}
+.card-1 .hm{
+    margin-left: 200px;
+}
+.card-1 .nff{
+    margin-left: 250px;
+}
+.card-1 .mi{
+    margin-bottom: 25px;
+}
+.card-1 button{
+    border-radius: 20px;
+    width: 150px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.text-1 h1{
+    color: blueviolet;
+    margin-left: 30px;
+
+}
+.text-1 p{
+    padding: 10px;
+    margin-left: 30px;
+    color: white;
+}
+
+.eli-1  {
+    color: white;
+    font-size: 60px;
+    /* margin-top: -150px; */
+    text-align: center;
+}
+
+/* stacking */
+
+.staking{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+}
+
+.staking .stak-img{
+    margin-top: 100px;
+}
+
+.staking .stak-text{
+    margin-top: 150px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.staking .stak-text h1{
+    color: blueviolet;
+}
+
+#btn-1{
+    border-radius: 40px;
+    color: white;
+    margin-top: 15px;
+    /* padding: 5px; */
+    margin-left: 20px;
+}
+
+.card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.card-2 .card-21{
+    border: 4px solid white;
+    text-align: center;
+    color: white;
+    width: 30%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 90px;
+}
+
+.card-21 img{
+    height: 60px;
+   
+}
+
+.card-21 h4{
+    color: blueviolet;
+    margin-bottom: 15px;
+}
+.card-21 p{
+    margin-bottom: 25px;
+}
+
+.join img{
+    margin-top: 80px;
+}
+
+footer{
+    margin-top: -15px;
+    color: white;
+}
+
+footer img{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.foot-part{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.foot-part h5{
+    color: blueviolet;
+    margin-bottom: 30px;
+}
+
+.foot-part input{
+    width: 270px;
+    padding: 5px;
+    border: 3px solid gray;
+    border-radius: 20px;
+}
+.box-3 i{
+    margin-left: -30px;
+}
+
+
+
+
+
+
+
