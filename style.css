@@ -8,32 +8,63 @@
     background-color: rgb(23, 2, 44);
 }
 
-
-
-span i{
-    color: white;
-    font-size: 30px;
-    
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-#links{
-    margin-left: 250px;
-    padding: 10px;
-}
-
-#links ul li a{
-    padding-left: 30px;
-    color: white;
-}
-
-#bt{
-    border-radius: 30px;
-    padding-left: 20px;
+.logo{
     margin-left: 30px;
+    transition: all 0.5s;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.logo a:hover{
+    color: blueviolet;
+    text-shadow: 5px;
+}
+#links ul{
+    display: flex;
+    gap: 10px;
+    transition: all 0.5s;
+}
+
+#links li{
+    list-style: none;
+}
+
+#links li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px;
+    color: #ffff;
+}
+
+#links  a:hover{
+    border-color: rgb(225, 213, 213);
+    color: #d61515;
+}
+
+.navicon{
+    display: none;
+}
+
+.navicon i{
+    font-size: 30px;
+    color: #ffff;
+    margin-top: 5px;
 }
 
 #bt img{
-
     height: 20px;
     width: 20px;
 }
@@ -44,7 +75,6 @@ span i{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -100px;
     padding: 30px;
 }
 
@@ -52,13 +82,14 @@ span i{
     margin-top: -80px;
     color: white;
 }
+
 .main .text h1{
     color: blueviolet;
 }
 
  .img img{
-    height: 600px;
-    width: 700px;
+    height: 550px;
+    width: 545px;
 }
 
 .eli  {
@@ -68,19 +99,24 @@ span i{
     text-align: center;
 }
 
+.eli i{
+    background-color: transparent;
+}
+
+  /* lottery page */
 .lottery{
     display: flex;
     justify-content: space-evenly;
     margin-top: -20px;
     padding-top: 30px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .card-1{
     width: 30%;
     border: 2px solid rgb(202, 182, 182);
     border-radius: 15px;
     text-align: center;
-    gap: 30px;
+    gap: 25px;
 }
 .card-1 .he{
 
@@ -88,10 +124,10 @@ span i{
     width: 60px;
 }
 .card-1 .hm{
-    margin-left: 200px;
+    margin-left: 180px;
 }
 .card-1 .nff{
-    margin-left: 250px;
+    margin-left: 200px;
 }
 .card-1 .mi{
     margin-bottom: 25px;
@@ -107,8 +143,8 @@ span i{
 .text-1 h1{
     color: blueviolet;
     margin-left: 30px;
-
 }
+
 .text-1 p{
     padding: 10px;
     margin-left: 30px;
@@ -118,12 +154,10 @@ span i{
 .eli-1  {
     color: white;
     font-size: 60px;
-    /* margin-top: -150px; */
     text-align: center;
-}
+} 
 
 /* stacking */
-
 .staking{
     display: flex;
     justify-content: space-between;
@@ -133,6 +167,7 @@ span i{
 
 .staking .stak-img{
     margin-top: 100px;
+    width:80wh;
 }
 
 .staking .stak-text{
@@ -149,7 +184,6 @@ span i{
     border-radius: 40px;
     color: white;
     margin-top: 15px;
-    /* padding: 5px; */
     margin-left: 20px;
 }
 
@@ -159,7 +193,6 @@ span i{
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
-
 }
 
 .card-2 .card-21{
@@ -174,20 +207,27 @@ span i{
 
 .card-21 img{
     height: 60px;
-   
 }
 
 .card-21 h4{
     color: blueviolet;
     margin-bottom: 15px;
 }
+
 .card-21 p{
     margin-bottom: 25px;
 }
 
+.join p{
+    width: 90vw;
+}
+
 .join img{
     margin-top: 80px;
+    width: 100%;
 }
+
+/* footer */
 
 footer{
     margin-top: -15px;
@@ -216,6 +256,114 @@ footer img{
 }
 .box-3 i{
     margin-left: -30px;
+} 
+
+/* media */
+@media (max-width:992px)
+{
+    .logo{
+        margin-left: 5px;
+    }
+    .logo a{
+        font-size: 25px;
+    }
+    #links li a{
+    font-size: 14px;
+    padding: 3px;
+    }
+.card-1{
+    width: 40%;
+    margin-bottom: 10px;
+    }
+}
+
+@media (max-width:768px){
+    .logo{
+        margin-left: 25px;
+    }
+    .logo a{
+        font-size: 35px;
+    }
+    .navicon{
+    display: block;
+    margin-right: 10px;
+    }
+#links ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    }
+#links li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px;
+    color: #ffff;
+    }
+.navicon button{
+    border: none;
+    transition: all 0.5s;
+    }
+.navicon i:hover{
+    color: blueviolet ;
+    }
+.main{
+    flex-direction: column-reverse;
+    }
+.eli  {
+    color: white;
+    font-size: 60px;
+    margin-top: -300px;
+    text-align: center;
+    background-color: none;
+    }
+ .img img{
+    height: 90vh;
+    width: 90vw;
+    }
+.lottery{
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    }
+.card-1{
+    width: 60%;
+    margin-bottom: 10px;
+    }
+.text-1{
+    margin-top: 200px;
+    }
+.staking{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+.card-2 .card-21{
+    width: 50%;
+    }
+.foot-part{
+    flex-direction: column;
+    margin-left: 40px;
+    }
+}
+
+@media (max-width:560px){
+    .card-1 .hm{
+    margin-left: 100px;
+    }
+.card-1 .nff{
+    margin-left: 100px;
+    }
+.card-1 {
+    overflow: hidden;
+    }
+.stak-img img{
+    width: 330px;
+    }
 }
 
 
